@@ -33,7 +33,7 @@ Ensure you have *Python 3.7+* installed.
 ### 📌 Setup Steps
 1. *Clone the Repository* 📂
    bash
-   git clone (https://github.com/Coderkingkrishna/Emotion-detection)
+   git clone (https://github.com/Deepakshukla12/Mood-MAP))
    cd moodmap
    
 2. *Create a Virtual Environment* 🌍
