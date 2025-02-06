@@ -1,0 +1,610 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px 20px;
+    border-bottom: 5px solid #000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.navbar {
+    z-index: 9999;
+}
+.navbar .logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(179, 174, 174);
+    padding: 8px;
+    border: 3px solid grey;
+    border-radius: 20px;
+}
+.navbar .logo:hover {
+    border-color:#007bff;
+    transition: border-color 1.1s ease, transform 0.2s ease;
+}
+
+.navbar .nav-links {
+    display: flex;
+    gap: 30px;
+    margin-right: 20px;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: rgb(179, 174, 174);
+    font-size: 19px;
+    font-weight: bold;
+    padding-bottom: 6px;
+    position: relative;
+}
+
+.navbar .nav-links a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #007bff;
+    transform: scaleX(0);
+    transition: transform 0.8s ease;
+}
+
+.navbar .nav-links a:hover {
+    font-size: 22px;
+    transform: scale(1.1);
+    color: #969592;
+}
+
+.navbar .nav-links a:hover::after {
+    transform: scaleX(1);
+}
+
+
+/* Content Section */
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 90px 50px;
+    margin-bottom: 90px;
+}
+
+.content .text {
+    flex: 1;
+    padding-right: 50px;
+    padding-bottom: 40px;
+    border-radius: 60px;
+    background-color: #000;
+    transition: all 0.5s ease, transform 0.9s ease;
+    height: 650px; /* Slightly reduced the height */
+    width: 900px;  /* Slightly increased the width */
+    margin-top: 25px;
+    margin-right: 40px;
+    background-color: black;
+}
+
+.content .text:hover {
+    height: 655px;
+    width: 40%; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05) translateX(20px);
+}
+
+.content .text h1 {
+    font-size: 60px;
+    color: gray;
+    margin: 30px 0 0 50px;
+}
+
+.content .text h2 {
+    color: grey;
+}
+
+.content .text h1 span {
+    color: rgb(142, 129, 129);
+    opacity: 0.6;
+    filter: contrast(40%);
+}
+
+.content .underline {
+    width: 250px;
+    height: 4px;
+    background-color: rgb(7, 7, 222);
+    margin: 0 0 0 80px;
+}
+
+.highlight {
+    color: #947705;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: rgba(255, 204, 0, 0.2);
+    padding: 2px 4px;
+}
+
+
+.content .text p {
+    font-size: 18px;
+    color: grey;
+    margin: 10px 0 0 60px;
+    margin-bottom: 35px;
+    line-height: 1.2; 
+    word-spacing: 3px;
+}
+
+
+.content .text p span {
+    color: gray;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.content .text .button {
+    display: inline-block;
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #3a392f, #d4b300);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 35px;
+    transition: background 2.5s ease, transform 2.5s ease; /* Smoother transition */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.content .text .button:hover {
+    background: linear-gradient(135deg, #393932, #6a653a);
+    font-size: 20px;
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.content .image {
+    flex: 9;
+}
+
+.content .image img {
+    position: inherit;
+    width: 100%;
+    height: 100%;
+    margin-right: 40px;
+    margin-top: 40px;
+    filter: contrast(90%);
+    transition: opacity 0.3s ease-in-out, filter 0.3s ease-in-out; 
+}
+
+/* Services */
+#Services {
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+#Services h1 {
+    font-size: 2.8em;
+    color: #343a40;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#Services .underline {
+    width: 100px;
+    height: 4px;
+    background-color: #007bff;
+    margin: 0 auto 20px;
+    transition: width 0.5s ease;
+}
+
+#Services h1:hover + .underline {
+    width: 250px;
+}
+
+#Services p {
+    font-size: 1.2em;
+    color: #495057;
+    margin-bottom: 30px;
+}
+
+.services-content {
+    display: flex;
+    align-items: flex-start;
+}
+
+.text-content {
+    margin-top: 90px;
+    flex: 1;
+    text-align: left; 
+    padding-left: 20px; 
+}
+
+#Services ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 5px;
+}
+
+#Services ul li {
+    background-color: rgb(202, 202, 196);
+    border-radius: 40px;
+    padding: 20px;
+    margin: 25px 0;
+    margin-right: 100px;
+    transition: background-color 0.4s ease, color 0.4s ease, transform 0.4s ease;
+}
+
+#Services ul li:hover {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    transform: scale(1.05); /* Slightly increase the size */
+}
+
+#Services ul li strong {
+    color: #007bff;
+    transition: color 0.9s ease;
+}
+
+#Services ul li:hover strong {
+    color: #fff;
+}
+#Services .button {
+    text-decoration: none;
+    margin-left: 250px;
+    margin-top: 60px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+#Services .button:hover {
+    background-color: #064180;
+}
+
+#Services .image {
+    flex: 0 0 auto; 
+    margin-right: 10px; 
+    margin-left: 5px;
+}
+
+#Services .image img {
+    width: 480px;
+    height: 480px;
+    margin-left: 80px;
+    margin-right: 50px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+/*Card Services*/
+.Section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 8%;
+    margin-bottom: 3%;
+    gap: 8%;
+}
+
+.Section .card {
+    background-color: grey;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 25%;
+    height: 140%;
+    padding: 15px;
+    padding-bottom: 30px;
+    text-align: center;
+    transition: all 0.9s ease;
+}
+.Section .card:hover{
+    transform: scale(1.05);
+}
+
+.Section .card h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    margin-top: 15px;
+}
+
+.Section .card p {
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #333;
+    margin-top: 15px;
+}
+
+.Section .card img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 10px;
+    filter: invert();
+    transition: all 0.9s;
+    cursor: pointer;
+}
+
+.Section .card img:hover {
+    filter: none;
+    transform: scale(1.05);
+}
+
+.Section .card a {
+    text-decoration: none;
+    color: white; 
+    font-size: 1.1em;
+    font-weight: 550;
+    padding: 10px 40px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: rgb(176, 176, 140);
+    transition: background-color 0.3s, transform 0.3s; 
+}
+
+.Section .card img:hover + a {
+    background-color: rgb(140, 140, 90); 
+}
+
+.Section .card a:hover {
+    transform: scale(1.09); 
+    font-size: 1.2rem; 
+}
+/*-------faq--------*/
+.faq-section {
+    padding: 50px;
+}
+
+.faq-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(205, 205, 180);
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 50px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.faq-container h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2.8em;
+    text-align: center; 
+    width: 100%;
+}
+
+.faq-container p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2em;
+    text-align: center; 
+    width: 100%; 
+}
+
+
+
+.left-column,
+.right-column {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.faq-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 350px;
+    flex-grow: 1; 
+}
+
+.faq-item h3 {
+    color: #333;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    color: #555;
+    line-height: 1.6;
+    flex-grow: 1; 
+}
+
+.faq-item a {
+    color: #007bff;
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.3s ease;
+    margin-top: auto; 
+}
+
+.faq-item a:hover {
+    background-color: #007bff;
+    color: black;
+    border-color: #007bff;
+}
+
+.footer {
+    background-color: #000; /* Set the background to black */
+    color: #d6d1d1; /* Set general text color to white */
+    padding-top: 40px;
+    padding-bottom: 30px;
+    height: 720px;
+    margin-top: 10%;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+}
+
+
+/* Container and Layout */
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    background-color: #111; /* Slightly lighter black for contrast */
+    border-radius: 20px;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    margin-right: 30%;
+}
+
+/* Form Container Styling */
+.footer .form-container {
+    flex: 0.6;
+    border: 2px solid #007bff;
+    border-radius: 20px;
+    padding: 0px 40px;
+    padding-bottom: 18px;
+    width: 100%;
+    max-width: 500px; /* Increase max-width */
+    text-align: center;
+}
+
+.footer .form-container h3 {
+    font-size: 28px;
+    border: 2px solid #007bff;
+    border-radius: 20px;
+    padding: 10px 10px;
+    color: #fff;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+.footer .form-container h3 span {
+    color: #007bff; /* Use a vibrant pink for accent */
+}
+
+.footer .form-container p {
+    font-size: 16px;
+    color: #bbb;
+    margin-bottom: 20px;
+}
+
+/* Form Inputs & Textareas */
+.footer .form-container form input,
+.footer .form-container form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 0px 0;
+    border: 2px solid #333;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #222;
+    color: #fff;
+}
+.footer .form-container form textarea{
+    height: 120px;
+    margin-bottom: 30px;
+}
+
+.footer .form-container form input::placeholder,
+.footer .form-container form textarea::placeholder {
+    color: #666;
+}
+
+/* Submit Button */
+.footer .form-container form input[type="submit"] {
+    background-color: #007bff; /* Vibrant button color */
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    width: 60%;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 15px;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 10px rgba(99, 77, 222, 0.5);
+}
+
+.footer .form-container form input[type="submit"]:hover {
+    color: white;
+    background-color: #333;
+    transform: scale(1.05);
+}
+.footer .form-container form h4{
+   text-align: left; 
+}
+.footer .form-container form h4 span{
+    color: red;
+}
+.footer-content {
+    padding: 40px 0;
+    margin-top: 50px;
+    margin-right: 90px;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-content p {
+    text-align:end;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.footer-content .icon {
+    color: #007bff;
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+.footer-content p:last-of-type {
+    font-size: 14px;
+    color: #bbb;
+    margin-bottom: 0;
+}
+
+.footer-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-content ul li a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.footer-content ul li a:hover {
+    color: #fff;
+}
