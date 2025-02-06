@@ -1,10 +1,8 @@
-
 body, html {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
-
 .navbar {
     position: fixed;
     left: 0;
@@ -28,6 +26,7 @@ body, html {
     padding: 8px;
     border: 3px solid grey;
     border-radius: 20px;
+    border-color:#007bff;
 }
 .navbar .logo:hover {
     border-color:#007bff;
@@ -95,7 +94,7 @@ body, html {
 }
 
 .content .text:hover {
-    height: 655px;
+    height: 650px;
     width: 40%; 
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     transform: scale(1.05) translateX(20px);
@@ -184,6 +183,18 @@ body, html {
     margin-top: 40px;
     filter: contrast(90%);
     transition: opacity 0.3s ease-in-out, filter 0.3s ease-in-out; 
+}
+
+.content .animate{
+    background-color: black;
+    margin-top: 30px;
+    border: 5px solid black;
+    border-radius: 20px;
+    padding: 3px 3px;
+}
+
+.content .animate:hover{
+    border-color: #007bff;
 }
 
 /* Services */
@@ -372,7 +383,7 @@ body, html {
 }
 /*-------faq--------*/
 .faq-section {
-    padding: 50px;
+    padding: 100px;
 }
 
 .faq-container {
@@ -391,7 +402,9 @@ body, html {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 2.8em;
     text-align: center; 
-    width: 100%;
+    width: 30%;
+    border: 4px solid black;
+    border-radius: 30px;
 }
 
 .faq-container p {
