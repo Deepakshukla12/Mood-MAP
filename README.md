@@ -71,8 +71,11 @@ moodmap/
 ├── static/
 
 │   ├── styles.css  (UI Styling)
+
 │   ├── images/  (Assets & Backgrounds)
+
 ├── templates/
+
 │   ├── index.html  (Home Page)
 │   ├── face_analysis.html  (Emotion Detection Page)
 │   ├── signup.html  (Sign Up Page)
